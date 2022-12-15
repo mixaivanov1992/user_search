@@ -10,14 +10,14 @@
     .header{
         @include margin-left-right;
         margin-top: 27px;
-        margin-bottom: 14px; //в первых двух макетах 22px в последнем макете 14ox
+        margin-bottom: 14px;
         font-weight: 600;
         line-height: 140%;
     }
     .field {
         @include margin-left-right;
         flex: 0 1;
-        margin-bottom: 29px; //в первых двух макетах 22px в последнем макете 29ox
+        margin-bottom: 29px;
         > input{
             line-height: 17px;
             font-size: 14px;

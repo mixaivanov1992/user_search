@@ -2,7 +2,7 @@
     <div class="search">
       <div class="header">Поиск сотрудников</div>
       <div class="field">
-        <input type="text" placeholder="Введите Id или имя" v-on:keyup.enter="onEnter" />
+        <input type="text" v-model="searchValue" placeholder="Введите Id или имя" v-on:keyup.enter="onEnter" />
       </div>
       <div class="result-header">
         <div>Результаты</div>
@@ -28,7 +28,10 @@ export default {
   name: 'SearchComponent',
   computed: mapGetters(['allUsers']),
   data(){
-    return { isSearch: false }
+    return {
+      isSearch: false,
+      searchValue: ''
+    }
   },
   methods:{
     ...mapActions(['fetchUsers', 'setSelectedUserId', 'changeLoaderState']),
