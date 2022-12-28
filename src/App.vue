@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import './assets/styles/reset.css';
-import './assets/styles/style.css';
 import {mapGetters} from 'vuex';
 import Header from './components/Header/Header.vue';
 import Container from './components/Container/Container.vue';

@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div>Жилфонд</div>
+        <div>Сайт</div>
         <div>Пользователь</div>
     </header>
 </template>
